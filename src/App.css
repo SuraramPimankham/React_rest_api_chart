@@ -1,0 +1,284 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  height: 100vh;
+}
+
+.sideMenu {
+  flex: 3;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.content {
+  flex: 7;
+  background-color: #f0f0f0;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cardMenu {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardMenu h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cardMenu hr {
+  margin: 10px 0;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-content h2 {
+  margin-bottom: 10px;
+}
+
+.entities-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-entities-content-1,
+.card-entities-content-2 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-entities-content-1 {
+  height: 25%;
+  margin-bottom: 10px;
+}
+
+.card-entities-content-2 {
+  height: 75%;
+}
+
+.card-entities-content-1 h2,
+.card-entities-content-2 h2 {
+  margin-bottom: 10px;
+}
+
+.ButtonDA {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: #198dfa;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ButtonDA:hover {
+  background-color: #116bc1;
+}
+
+.ButtonI {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: #f6a225;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ButtonI:hover {
+  background-color: #d18b21;
+}
+
+.ButtonE {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: #26a768;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ButtonE:hover {
+  background-color: #1b8552;
+}
+
+.ButtonCF {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: #9133b0;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ButtonCF:hover {
+  background-color: #65207c;
+}
+
+.ButtonBL {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: #62c740;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ButtonBL:hover {
+  background-color: #48962e;
+}
+
+.ButtonRB {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: #e736ea;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ButtonRB:hover {
+  background-color: #b528b8;
+}
+
+.ButtonNLP {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: #b38b05;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ButtonNLP:hover {
+  background-color: #856705;
+}
+
+.ButtonDA.active::before,
+.ButtonI.active::before,
+.ButtonE.active::before,
+.ButtonCF.active::before,
+.ButtonBL.active::before,
+.ButtonRB.active::before,
+.ButtonNLP.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid white;
+  transform: translateY(-50%) rotate(-0deg);
+}
+
+.ButtonDA.active::after,
+.ButtonI.active::after,
+.ButtonE.active::after,
+.ButtonCF.active::after,
+.ButtonBL.active::after,
+.ButtonRB.active::after,
+.ButtonNLP.active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #f0f0f0;
+  transform: translateY(-50%) rotate(-0deg);
+}
+
+.chart-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-entities-content-2 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.card-entities-content-2 th,
+.card-entities-content-2 td {
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.tNameHead {
+  color: #198dfa;
+}
+
+th.tNameHead:nth-child(1),
+td:nth-child(1) {
+  width: 25%;
+}
+
+th.tNameHead:nth-child(2),
+td:nth-child(2) {
+  width: 75%;
+}
+
+.card-entities-content-2 button {
+  width: 150px; 
+  border: 2px solid #ccc; 
+  border-radius: 5px; 
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.card-entities-content-2 input {
+  width: auto;
+  min-width: 50px;
+  max-width: 150px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.card-entities-content-2 input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.delete-icon {
+  position: relative; /* เปลี่ยนจาก absolute เป็น relative */
+  left: -30px; /* ปรับตำแหน่งไปทางซ้าย */
+  cursor: pointer;
+  z-index: 1; 
+  color: #ccc;
+}
